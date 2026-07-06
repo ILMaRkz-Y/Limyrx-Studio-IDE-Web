@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Limyrx Studio IDE Roadmap — What's Shipped, What's Next</title>
+<meta name="description" content="What's shipped and what's next for Limyrx Studio IDE, the agentic development environment for AI coding.">
+<meta property="og:site_name" content="Limyrx Studio IDE">
+<meta property="og:title" content="Limyrx Studio IDE Roadmap — What's Shipped, What's Next">
+<meta property="og:description" content="What's shipped and what's next for Limyrx Studio IDE, the agentic development environment for AI coding.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://limyrxstudio.dev/roadmap/">
+<meta property="og:image" content="https://limyrxstudio.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Limyrx Studio IDE Roadmap — What's Shipped, What's Next">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="uk_UA">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Limyrx Studio IDE Roadmap — What's Shipped, What's Next">
+<meta name="twitter:description" content="What's shipped and what's next for Limyrx Studio IDE, the agentic development environment for AI coding.">
+<meta name="twitter:image" content="https://limyrxstudio.dev/og-image.png">
+<link rel="canonical" href="https://limyrxstudio.dev/roadmap">
+<link rel="alternate" hreflang="en" href="https://limyrxstudio.dev/roadmap">
+<link rel="alternate" hreflang="uk" href="https://limyrxstudio.dev/uk/roadmap">
+<link rel="alternate" hreflang="zh-Hans" href="https://limyrxstudio.dev/zh/roadmap">
+<link rel="alternate" hreflang="es" href="https://limyrxstudio.dev/es/roadmap">
+<link rel="alternate" hreflang="pt-BR" href="https://limyrxstudio.dev/pt/roadmap">
+<link rel="alternate" hreflang="ko" href="https://limyrxstudio.dev/ko/roadmap">
+<link rel="alternate" hreflang="pl" href="https://limyrxstudio.dev/pl/roadmap">
+<link rel="alternate" hreflang="fr" href="https://limyrxstudio.dev/fr/roadmap">
+<link rel="alternate" hreflang="ja" href="https://limyrxstudio.dev/ja/roadmap">
+<link rel="alternate" hreflang="x-default" href="https://limyrxstudio.dev/roadmap">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0a08" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)">
+<script>
+      document.documentElement.classList.add('js-reveal');
+    </script>
+<link rel="stylesheet" href="/_astro/changelog.CyXz3kGQ.css">
+<style>.roadmap-timeline[data-astro-cid-buppfucb]{--umber: #c08a4a;--umber-halo: rgba(192, 138, 74, .22);--umber-halo-soft: rgba(192, 138, 74, .06)}@media(prefers-color-scheme:light){.roadmap-timeline[data-astro-cid-buppfucb]{--umber: #8a5a28;--umber-halo: rgba(138, 90, 40, .22);--umber-halo-soft: rgba(138, 90, 40, .06)}}.roadmap-hero[data-astro-cid-buppfucb]{width:min(calc(100% - 3rem),var(--max-w));margin:0 auto;padding:4rem 0 3rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:.95rem}.roadmap-title[data-astro-cid-buppfucb]{font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,5.6vw,4rem);line-height:.95;letter-spacing:-.04em;margin:0}.roadmap-lede[data-astro-cid-buppfucb]{margin:0;max-width:38rem}.roadmap-timeline-section[data-astro-cid-buppfucb]{width:min(calc(100% - 3rem),720px);margin:0 auto;padding:1rem 0 6rem}.roadmap-timeline[data-astro-cid-buppfucb]{position:relative;list-style:none;margin:0;padding:0}.roadmap-item[data-astro-cid-buppfucb]{position:relative;padding:1.25rem 0 1.25rem 2.25rem}.roadmap-item[data-astro-cid-buppfucb]:not(:first-child):before,.roadmap-item[data-astro-cid-buppfucb]:not(:last-child):after{content:"";position:absolute;left:5px;width:1px;background:var(--border-strong)}.roadmap-item[data-astro-cid-buppfucb]:not(:first-child):before{top:0;height:calc(2rem + 1px)}.roadmap-item[data-astro-cid-buppfucb]:not(:last-child):after{top:calc(2rem - 1px);bottom:0}.roadmap-dot[data-astro-cid-buppfucb]{position:absolute;left:0;top:1.65rem;width:11px;height:11px;border-radius:50%;background:var(--bg-base);border:1px solid var(--border-strong);z-index:1;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out)}.roadmap-item[data-astro-cid-buppfucb][data-status=shipped] .roadmap-dot[data-astro-cid-buppfucb]{background:var(--amber);border-color:var(--amber)}.roadmap-item[data-astro-cid-buppfucb][data-status=in-progress] .roadmap-dot[data-astro-cid-buppfucb]{background:var(--umber);border-color:var(--umber);box-shadow:0 0 0 4px var(--umber-halo);animation:roadmap-pulse 2.4s ease-in-out infinite}.roadmap-item[data-astro-cid-buppfucb][data-status=planned] .roadmap-dot[data-astro-cid-buppfucb]{background:color-mix(in srgb,var(--text-tertiary) 55%,var(--bg-base));border-color:color-mix(in srgb,var(--text-tertiary) 55%,var(--bg-base))}@keyframes roadmap-pulse{0%,to{box-shadow:0 0 0 4px var(--umber-halo)}50%{box-shadow:0 0 0 6px var(--umber-halo-soft)}}.roadmap-content[data-astro-cid-buppfucb]{display:flex;flex-direction:column;gap:.55rem}.roadmap-item-title[data-astro-cid-buppfucb]{margin:0;display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap}.roadmap-item-name[data-astro-cid-buppfucb]{font-family:var(--font-mono);font-weight:500;font-size:1.1rem;letter-spacing:-.01em}.roadmap-status[data-astro-cid-buppfucb]{font-family:var(--font-mono);font-size:.65rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--text-tertiary)}.roadmap-item[data-astro-cid-buppfucb][data-status=shipped] .roadmap-status[data-astro-cid-buppfucb]{color:var(--amber)}.roadmap-item[data-astro-cid-buppfucb][data-status=in-progress] .roadmap-status[data-astro-cid-buppfucb]{color:var(--umber)}.roadmap-item[data-astro-cid-buppfucb][data-status=planned] .roadmap-item-title[data-astro-cid-buppfucb]{color:var(--text-secondary)}.roadmap-item-description[data-astro-cid-buppfucb]{margin:0;font-size:.95rem;line-height:1.55;color:var(--text-secondary)}.roadmap-item[data-astro-cid-buppfucb][data-status=planned] .roadmap-item-description[data-astro-cid-buppfucb]{color:var(--text-tertiary)}
+</style>
+</head>
+<body>
+<div class="page-shell">
+  <div class="topbar-wrap">
+    <div class="topbar-blur" aria-hidden="true">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="topbar-inner">
+      <a class="brand" href="/">
+        <img class="brand-logo brand-logo-dark" src="/assets/logo.png" alt="Limyrx Studio IDE" width="24" height="24">
+        <img class="brand-logo brand-logo-light" src="/assets/logo.png" alt="Limyrx Studio IDE" width="24" height="24">
+        <span>Limyrx Studio IDE</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="/docs/"> Docs </a>
+        <a href="/roadmap" class="active"> Roadmap </a>
+        <a href="/support"> Support </a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=5YKFVMPZBLUGG" target="_blank" rel="noopener noreferrer"> Donate </a>
+        <div class="lang-switcher" data-lang-switcher>
+          <button type="button" class="lang-switcher-summary" popovertarget="lang-switcher-menu" aria-label="🇺🇸 English">
+            <svg class="lang-switcher-globe" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="7.25" stroke="currentColor" stroke-width="1.4"></circle>
+              <path d="M10 2.75c2 2 3 4.75 3 7.25s-1 5.25-3 7.25c-2-2-3-4.75-3-7.25s1-5.25 3-7.25ZM3 10h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <span class="lang-switcher-current">🇺🇸 English</span>
+            <svg class="lang-switcher-chevron" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <ul class="lang-switcher-menu" id="lang-switcher-menu" popover="auto">
+            <li>
+              <a href="/roadmap" hreflang="en" class="lang-switcher-option active" aria-current="true">🇺🇸 English</a>
+            </li>
+            <li>
+              <a href="/ar/roadmap" hreflang="ar" class="lang-switcher-option">🇵🇸 العربية</a>
+            </li>
+            <li>
+              <a href="/uk/roadmap" hreflang="uk" class="lang-switcher-option"> Українська </a>
+            </li>
+            <li>
+              <a href="/zh/roadmap" hreflang="zh" class="lang-switcher-option"> 简体中文 </a>
+            </li>
+            <li>
+              <a href="/es/roadmap" hreflang="es" class="lang-switcher-option"> Español </a>
+            </li>
+            <li>
+              <a href="/pt/roadmap" hreflang="pt" class="lang-switcher-option"> Português (BR) </a>
+            </li>
+            <li>
+              <a href="/ko/roadmap" hreflang="ko" class="lang-switcher-option"> 한국어 </a>
+            </li>
+            <li>
+              <a href="/pl/roadmap" hreflang="pl" class="lang-switcher-option"> Polski </a>
+            </li>
+            <li>
+              <a href="/fr/roadmap" hreflang="fr" class="lang-switcher-option"> Français </a>
+            </li>
+            <li>
+              <a href="/ja/roadmap" hreflang="ja" class="lang-switcher-option"> 日本語 </a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          (() => {
+            const trigger = document.querySelector('[data-lang-switcher] [popovertarget]');
+            const menu = document.getElementById('lang-switcher-menu');
+            if (!trigger || !menu) return;
+
+            const position = () => {
+              const r = trigger.getBoundingClientRect();
+              menu.style.top = `${Math.round(r.bottom + 8)}px`;
+              menu.style.left = 'auto';
+              menu.style.right = `${Math.round(window.innerWidth - r.right)}px`;
+            };
+
+            menu.addEventListener('beforetoggle', (event) => {
+              if (event.newState === 'open') position();
+            });
+
+            menu.addEventListener('toggle', (event) => {
+              if (event.newState === 'open') {
+                position();
+                window.addEventListener('scroll', position, { passive: true });
+                window.addEventListener('resize', position);
+              } else {
+                window.removeEventListener('scroll', position);
+                window.removeEventListener('resize', position);
+              }
+            });
+          })();
+        </script>
+        <a href="/download" class="nav-cta">Download</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav-toggle-box" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <section class="roadmap-hero fade-up" data-astro-cid-buppfucb>
+      <h1 class="roadmap-title" data-astro-cid-buppfucb>Roadmap.</h1>
+      <p class="lede roadmap-lede" data-astro-cid-buppfucb>What's shipped. What's coming.</p>
+    </section>
+
+    <section class="roadmap-timeline-section fade-up delay-2" data-astro-cid-buppfucb>
+      <ol class="roadmap-timeline" data-astro-cid-buppfucb>
+        <li class="roadmap-item" data-status="planned" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Integrations</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Planned</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>First-class GitLab and Linear support for issues, PRs, and tickets.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="planned" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>First-Party Relay</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Planned</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>End-to-end encrypted remote access without third-party tunnels.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="planned" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Linux App</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Planned</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>Bring the desktop experience to Linux.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="in-progress" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Mobile App</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>In progress</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>iOS and Android clients for on-the-go sessions.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="shipped" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Windows App</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Shipped</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>Bring the desktop experience to Windows.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="shipped" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Git &amp; GitHub Integration</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Shipped</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>Full Git sidebar, PR creation, and sessions started from issues.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="shipped" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Multi-Agent Orchestration</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Shipped</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>Run agents in parallel from one prompt, isolated worktrees per run.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="shipped" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>VS Code Extension</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Shipped</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>In-editor agent management with parallel multi-model runs.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="shipped" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Browser + PWA</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Shipped</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>Web interface with Cloudflare tunnel access and installable PWA.</p>
+          </div>
+        </li>
+        <li class="roadmap-item" data-status="shipped" data-astro-cid-buppfucb>
+          <span class="roadmap-dot" aria-hidden="true" data-astro-cid-buppfucb></span>
+          <div class="roadmap-content" data-astro-cid-buppfucb>
+            <h3 class="roadmap-item-title" data-astro-cid-buppfucb>
+              <span class="roadmap-item-name" data-astro-cid-buppfucb>Desktop App</span>
+              <span class="roadmap-status" data-astro-cid-buppfucb>Shipped</span>
+            </h3>
+            <p class="roadmap-item-description" data-astro-cid-buppfucb>macOS app with multi-window support and project shortcuts.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/download">Download</a></li>
+          <li><a href="/docs/install">Install Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/docs/">Documentation</a></li>
+          <li><a href="/roadmap">Roadmap</a></li>
+          <li><a href="/changelog">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/limyrxstudio/limyrx-studio-ide" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://discord.gg/ZYRSdnwwKA" target="_blank" rel="noopener noreferrer">Discord</a></li>
+          <li><a href="mailto:support@limyrxstudio.dev">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Limyrx Studio IDE. Built with care.</span>
+      <span>Independent project. Not affiliated with the OpenCode team.</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+      const navToggle = document.getElementById('nav-toggle');
+      const mainNav = document.getElementById('main-nav');
+
+      if (navToggle && mainNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = mainNav.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', isOpen.toString());
+        });
+      }
+
+      const revealEls = document.querySelectorAll('.fade-up');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                io.unobserve(entry.target);
+              }
+            }
+          },
+          { rootMargin: '0px 0px 5% 0px' }
+        );
+        revealEls.forEach((el) => io.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      const heroBackdrop = document.querySelector('[data-hero-backdrop]');
+      const prefersReducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      ).matches;
+
+      if (heroBackdrop && !prefersReducedMotion) {
+        let ticking = false;
+        const isMobile = window.matchMedia('(max-width: 768px)');
+        const updateParallax = () => {
+          if (isMobile.matches) {
+            if (heroBackdrop.style.transform) heroBackdrop.style.transform = '';
+            ticking = false;
+            return;
+          }
+          const y = window.scrollY;
+          if (y < heroBackdrop.offsetHeight) {
+            const offset = Math.round(y * 0.12);
+            heroBackdrop.style.transform = `translate3d(0, ${offset}px, 0)`;
+          }
+          ticking = false;
+        };
+        window.addEventListener(
+          'scroll',
+          () => {
+            if (!ticking) {
+              ticking = true;
+              requestAnimationFrame(updateParallax);
+            }
+          },
+          { passive: true }
+        );
+      }
+
+      let resizeTimer;
+      window.addEventListener(
+        'resize',
+        () => {
+          document.documentElement.classList.add('resizing');
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(() => {
+            document.documentElement.classList.remove('resizing');
+          }, 200);
+        },
+        { passive: true }
+      );
+
+      const topbar = document.querySelector('.topbar-wrap');
+      if (topbar) {
+        let topbarTicking = false;
+        const syncTopbar = () => {
+          topbar.classList.toggle('at-top', window.scrollY <= 4);
+          topbarTicking = false;
+        };
+        syncTopbar();
+        window.addEventListener(
+          'scroll',
+          () => {
+            if (!topbarTicking) {
+              topbarTicking = true;
+              requestAnimationFrame(syncTopbar);
+            }
+          },
+          { passive: true }
+        );
+      }
+
+      document.querySelectorAll('[data-faq-toggle]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('[data-faq-item]');
+          if (!item) return;
+          const wrap = item.querySelector('.faq-answer-wrap');
+          const isOpen = item.getAttribute('data-open') === 'true';
+          const next = !isOpen;
+          item.setAttribute('data-open', String(next));
+          btn.setAttribute('aria-expanded', String(next));
+          if (wrap) {
+            if (next) wrap.removeAttribute('inert');
+            else wrap.setAttribute('inert', '');
+          }
+        });
+      });
+    </script>
+</body>
+</html>

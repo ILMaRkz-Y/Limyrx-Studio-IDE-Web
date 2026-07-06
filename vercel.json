@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/ar/", "destination": "/ar/index.html" },
+    { "source": "/ar/:path", "destination": "/ar/:path.html" },
+    { "source": "/roadmap", "destination": "/roadmap.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/download", "destination": "/download.html" },
+    { "source": "/docs/", "destination": "/docs/index.html" },
+    { "source": "/docs/:path*/", "destination": "/docs/:path*/index.html" },
+    { "source": "/docs/:path*", "destination": "/docs/:path*.html" },
+    { "source": "/ar/docs/", "destination": "/ar/docs/index.html" },
+    { "source": "/ar/docs/:path*/", "destination": "/ar/docs/:path*/index.html" },
+    { "source": "/ar/docs/:path*", "destination": "/ar/docs/:path*.html" }
+  ]
+}
