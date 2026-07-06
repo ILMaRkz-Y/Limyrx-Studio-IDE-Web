@@ -1,9 +1,5 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/ar", "destination": "/ar/index.html" },
-    { "source": "/docs", "destination": "/docs/index.html" },
-    { "source": "/ar/docs", "destination": "/ar/docs/index.html" }
-  ]
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "cleanUrls": true
 }
